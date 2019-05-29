@@ -5,6 +5,12 @@ SEE MIT LICENSE FILE
 
 An OS Utility. Make writing node easier, prettier and less error prone. Writes and reads more like prose.
 
+## Synopsis
+
+exitFunctions: execute functions when program ends.
+getEnviromentVariable: get an OS environment variable.
+systemSync: execute a system command synchronously.
+
 ## Usage
 
 ```javascript
