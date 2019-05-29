@@ -1,0 +1,34 @@
+{
+  "name": "prose_os",
+  "version": "1.0.3",
+  "description": "An OS Utility. Make writing node easier, prettier and less error prone. Writes and reads more like prose",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "OS",
+    "core",
+    "easy",
+    "lodash",
+    "pretty",
+    "prose",
+    "short",
+    "simple",
+    "style"
+  ],
+  "authors": [
+    "Sean D. Murray"
+  ],
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seandmurray/prose_os"
+  },
+  "dependencies": {
+    "prose_array": "*",
+    "prose_isit": "*",
+    "prose_string": "*"
+  },
+  "devDependencies": {}
+}
