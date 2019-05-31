@@ -69,6 +69,8 @@ exports.exitHandlers = (...handlers) => {
 	return addHandlers(EXIT_HANDLERS, handlers);
 };
 
+const FILE_PATH = process.argv[2];
+
 exports.getEnviromentVariable = (name, aDefault, required = false) => {
 	if (isit.notString(name) || string_util.isBlank(name)) throw new Error('The environment name must be a non blank string');
 	if (isit.notBoolean(required)) throw new Error('The "required" parameter must be a boolean');
@@ -80,6 +82,10 @@ exports.getEnviromentVariable = (name, aDefault, required = false) => {
 		if (string_util.isBlank(result)) return aDefault;
 	}
 	return result;
+};
+
+exports.getCommandLineArguments = () => {
+		return process.argv.slice(2);
 };
 
 exports.uncaughtExceptionHandlers = (...handlers) => {

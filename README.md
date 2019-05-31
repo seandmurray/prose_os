@@ -8,6 +8,7 @@ An OS Utility. Make writing node easier, prettier and less error prone. Writes a
 ## Synopsis
 
 exitFunctions: execute functions when program ends.
+getCommandLineArguments: get the command line arguments.
 getEnviromentVariable: get an OS environment variable.
 systemSync: execute a system command synchronously.
 
@@ -22,6 +23,9 @@ const os_util = require('prose_os');
 // * exitValue the exit value that will be returned to the system.. 0 = all is OK, 1 = a failure.
 // WARNING: functions must be short and have no ASYNC calls!!
 os_util.exitFunctions(functionOne, functionTwo);
+
+// Returns an array of just the command line arguments.
+const CLI_ARGS = getCommandLineArguments();
 
 // Get the value assigned to a OS environmental variable.
 // If a value was set that is returned.
