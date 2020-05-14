@@ -1,6 +1,6 @@
 # prose_os
 
-Copyright (c) 2019 Seán D. Murray
+Copyright (c) 2020 Seán D. Murray
 SEE MIT LICENSE FILE
 
 An OS Utility. Make writing node easier, prettier and less error prone. Writes and reads more like prose.
@@ -22,7 +22,7 @@ const os_util = require('prose_os');
 // * exitSignal is a string value for the reason the sytem exited such as 'exit' or 'SIGINT' (a ctl-c).
 // * exitValue the exit value that will be returned to the system.. 0 = all is OK, 1 = a failure.
 // WARNING: functions must be short and have no ASYNC calls!!
-os_util.exitFunctions(functionOne, functionTwo);
+os_util.exitFunctions(functionOne, functionTwo, functionN);
 
 // Returns an array of just the command line arguments.
 const CLI_ARGS = getCommandLineArguments();

@@ -10,4 +10,4 @@ const f2 = (exitSignal, exitValue) => {
 
 os_util.exitHandlers(f1, f2);
 
-throw new Error('This is a testing exception, not an erro');
+throw new Error('THIS IS AN EXPECTED TESTING EXCEPTION, THIS IS NOT AN ERROR');

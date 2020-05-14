@@ -30,7 +30,7 @@ assert.equal(tmp1.stdout, "f1exit0\nf2exit0\n", 'OK standard out');
 tmp1 = os_util.systemSync('node ./test/ExceptionExit.js');
 assert.equal(tmp1.status, 1, 'Not OK exit code');
 assert.equal(tmp1.message.startsWith('Command failed'), true, 'Not OK exit message');
-assert.equal(tmp1.stderr.startsWith('Error: This is a testing exception'), true, 'Not OK standard error');
+assert.equal(tmp1.stderr.startsWith('Error: THIS IS AN EXPECTED TESTING EXCEPTION, THIS IS NOT AN ERROR'), true, 'Not OK standard error');
 assert.equal(tmp1.stdout, "f1exit1\nf2exit1\n", 'Not OK standard out');
 console.log('exitHandlers testing success');
 
